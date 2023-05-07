@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 200px;
+  border: 1px solid rgba(243, 243, 243, 1);
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+}
+
+.img {
+  height: 134px;
+  width: 160px;
+  margin: 32px 19px 40px;
+}
+
+.card__item {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.card__name {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(6, 11, 53, 1);
+  margin-bottom: 4px;
+}
+
+.card__code {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  color: rgba(97, 96, 112, 1);
+  margin-bottom: 16px;
+}
+
+.card__reviews {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 400;
+  font-size: 10px;
+  color: rgba(6, 11, 53, 1);
+  margin-bottom: 24px;
+}
+
+.card__price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.price {
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(97, 96, 112, 1);
+}
+
+.price-num {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  color: rgba(6, 11, 53, 1);
+  width: 53px;
+  text-align: right;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stars__star {
+  background-image: url(images/star.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 16px;
+  height: 16px;
+}
+
+.stars__star:not(:last-child) {
+  margin-right: 4px;
+}
+
+.stars--4 .stars__star:nth-child(-n+4) {
+  background-image: url(images/star-active.svg);
+}
+
+.card-btn {
+  margin-bottom: 16px;
+}
+
+.card-btn__link {
+  display: inline-block;
+  box-sizing: border-box;
+  height: 40px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 12px 69px;
+  background-color: rgba(0, 172, 220, 1);
+  border: 1px solid rgba(0, 172, 220, 1);
+  border-radius: 5px;
+}
+
+.card-btn__link:hover {
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 5px;
+  color: rgba(0, 172, 220, 1);
+} 
